@@ -37,5 +37,11 @@ generate_project(){
 	curl -s -o .gitignore https://gist.githubusercontent.com/WojTechM/9a5a83d6ac2da1c04859854eb1f3a35e/raw/274af75d67089d5f50c4215bed345f6e026cb708/.gitignore
 }
 
+open_in_intellij(){
+	cd project_name
+	intellij-idea-ultimate pom.xml&>/dev/null &
+}
+
 ask_for_info
 generate_project
+open_in_intellij
